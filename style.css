@@ -1,0 +1,185 @@
+/* Platypro.net stylesheet
+ * https://www.platypro.net/
+ */
+
+@font-face { font-family: Roboto; src: url('fonts/Roboto.ttf'); } 
+
+*
+{
+  font-family:Roboto;
+  line-height: 1.1em;
+}
+
+#content
+{
+  min-width: 40em;
+  max-width: 40em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#links
+{
+  text-align: center;
+}
+
+section,.level1 {
+  width:70em;
+  margin:0.3em auto;
+}
+
+.FullLink {
+  color: white;
+  background-color: #587878;
+}
+
+.FullLink:hover {
+  background-color: #785858;
+}
+
+.Title {
+  display: block;
+  font-size:1em;
+  font-weight: bold;
+  text-align: center;
+}
+
+H1,H2,H3,strong {
+  color: #eaffb3;
+}
+
+h1 {
+  margin-top:1em;
+  margin-bottom:0.4em; 
+  text-align: center;
+  color:white;
+}
+
+h2 {
+  margin-top:1em;
+  margin-bottom:1em; 
+  color:white;
+}
+
+/* Styles for project items */
+.Project {
+  width: 50em;
+  padding: 0;
+  margin-bottom: 1.5em;
+  display:block;
+}
+
+.Project .pTitle
+{
+  display:block;
+}
+
+.Project .pDesc {
+  display: block;
+  padding-left: 1em;
+}
+
+.Project .pLinks {
+  display: block;
+  padding-left: 1em;
+}
+
+
+body {
+  background-color:#352b31 ;
+  color:white;
+  min-width:20em;
+  display: flex;
+  flex-direction: column;
+  padding:0;
+  font-size: 1.1em;
+}
+
+hr {
+  visibility: hidden;
+  margin:0;
+}
+
+a:link {color: #00ffff; text-decoration: underline; }
+a:active {color: #0000ff; text-decoration: underline; }
+a:visited {color: red; text-decoration: underline; }
+a:hover {color: #ff0000; text-decoration: none; }
+
+.noscript {
+  display:block;
+  padding-top:0.2em;
+  color:#CCCCCC;
+  text-align:center;
+  font-weight: bold;
+}
+
+.StripBar {
+  border: 1px solid;
+  border-color: black;
+  border-radius:5px;
+  background-color:#505050;
+  padding:5px;
+  color:white;
+  display:flex;
+  justify-content: space-between;
+  margin:0.3em auto;
+}
+
+.StripBar a:link
+{
+  color: #50AAAA; font-weight: bold;
+}
+
+.endofpage {
+  text-align:center;
+  color:gray;
+  font-size: 50px;
+}
+
+.ProjCollection {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+@media only screen and (max-width: 80em) {
+  header,.StripBar {
+    width: auto;
+    margin: 0 0 0.2em 0;
+    min-width: unset;
+  }
+
+  section {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 40em) {
+  .ProjCollection {
+    align-items: stretch;
+    margin: 0;
+    flex-direction: column;
+  }
+
+  .DescriptiveProject {
+    width: auto;
+    height: auto;
+  }
+
+  .Project {
+    flex-direction: column;
+    width: auto;
+    height: auto;
+  }
+
+  .ProjectStart, .ProjectEnd {
+    flex-direction: column;
+    height:auto;
+  }
+
+  .ProjectStart *, .ProjectEnd * {
+    margin: 0.2em 0;
+  }
+}
